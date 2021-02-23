@@ -1,0 +1,961 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+body{
+    font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+
+header{
+    position: fixed;
+    width: 100%;
+    padding: 13px 20px;
+    box-sizing: border-box;
+    z-index: 30;
+    /* background: aqua; */
+    background: #fff;
+}
+
+.header-flex{
+    display: flex;
+    height: auto;
+}
+
+.header-logo{
+    margin-right: 120px;
+    align-self: center;
+}
+/* .header-logo.sub{
+    display: none;
+} */
+
+/* .sub-header-logo{
+    margin-right: 120px;
+    align-self: center;
+    display: none;
+} */
+
+/* .sub-header-logo.sub{
+    display: block;
+} */
+
+
+
+.pc-navi{
+    align-self: center;
+}
+
+
+.pc-navi ul li{
+    display: inline-block;
+    margin-right: 30px;
+    
+}
+
+.navi-list{
+    text-decoration: none;
+    font: normal normal 800 16px/42px "YuMincho";
+    color: #666666;
+}
+
+.reserve{
+    vertical-align: middle;
+    align-self: center;
+    background: #978F10 0% 0% no-repeat padding-box;
+    padding: 6px 37px;
+    margin-left: auto;
+    overflow: auto;
+    font: normal normal 800 16px/16px "YuMincho";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+
+.reserve img{
+    width: 22px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+#open {
+
+cursor: pointer;
+width: 170px;
+border-radius: 4px;
+text-align: center;
+padding: 16px 0;
+
+}
+
+#mask {
+background: rgba(0, 0, 0, 0.4);
+position: fixed;
+top: 0;
+bottom: 0;
+right: 0;
+left: 0;
+z-index: 1;
+}
+
+#modal {
+background: #fff;
+width: 550px;
+padding: 20px;
+border-radius: 4px;
+position: fixed;
+top: 100px;
+left: 0;
+right: 0;
+margin: 0 auto;
+transition: transform 1.5s;
+z-index: 2;
+}
+
+#modal > p {
+margin: 0 0 20px;
+}
+
+#mask.hidden {
+display: none;
+}
+
+#modal.hidden {
+transform: translate(0, -1500px);
+display: none;
+}
+
+.modal-container{
+    width: calc(100% - 120px); 
+    margin: 0 auto;
+}
+
+
+
+.modal-ttl{
+    font: normal normal medium 20px/34px "YuMincho";
+    letter-spacing: 0px;
+    color: #000000;
+    text-align: center;
+    padding: 29px 0;
+    border-bottom: 1px solid #E7E7E7;
+    margin-bottom: 35px;
+    font-family: "YuMincho";
+}
+
+label{
+    display: block;
+    font-family: "YuMincho";    
+}
+
+input{
+    display: block;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E7E7E7;
+    margin: 14px 0;
+    box-sizing: border-box;
+    padding: 9px 10px;
+}
+
+
+
+select{
+    display: block;
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E7E7E7;
+    margin: 14px 0;
+    font: normal normal medium 14px/24px "YuMincho";
+    color: #797878;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 9px 10px;
+}
+
+
+
+button{
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    font: normal normal medium 16px/27px "YuMincho";
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 13px 67px;
+    margin-top: 50px;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.close img{
+    width: 18px;
+    position: absolute;
+    top:20px;
+    right: 22px;
+}
+
+.NavMenu{
+    display: none;
+}
+
+body.fixed {
+	width: 100%;
+	height: 100%;
+    left: 0;
+    overflow-y: hidden;
+}
+
+
+.reserve.open{
+    margin-right: 17px;
+}
+
+/* header.scroll-nav{
+    background: #fff;
+    transition: 0.5s;
+}
+
+
+header.scroll-nav .pc-navi ul li a{
+    color: #666666;
+} */
+
+
+
+
+
+@media (max-width: 1020px) and (min-width: 768px) {
+    .header-logo{
+        margin-right: 70px;
+    }
+
+    #modal {
+        top: 50px;
+        width: 400px;
+        padding: 0;
+    }
+
+    .modal-container{
+        width: calc(100% - 120px); 
+        margin: 0 auto;
+    }
+
+    .modal-ttl{
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    label{
+        font-size: 14px;
+    }
+
+    input{
+        font-size: 12px;
+    }
+
+    select{
+        font-size: 12px;
+    }
+    
+}
+
+@media (max-width: 767px){
+
+    .header-logo{
+        margin-right: 0px;
+    }
+
+    .header-logo img{
+        width: 100px;
+    }
+
+    
+    ul li a{
+    text-decoration: none;
+    color: #333333;
+    }
+
+    .sub-header-logo{
+        margin-right: 0px;        
+    }
+
+    .sub-header-logo img{
+        width: 100px;
+    }
+
+    .pc-navi{
+        display: none;
+    }
+
+    #open {
+        cursor: pointer;
+        width: 100px;
+        border-radius: 4px;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 12px;
+        }
+
+    .reserve{
+        display: inline-block;
+        align-self: center;
+        text-decoration: none;
+        margin-left: 0px;
+        background: #978F10 0% 0% no-repeat padding-box;
+        margin-left: 0;
+        margin: 0 auto;
+    }    
+   
+    .reserve.open{
+        margin-right: 55px;
+    }
+
+    .reserve a{
+        font: normal normal 800 13px/30px "YuMincho";
+        padding: 6px 20px;
+    }
+
+    
+    #modal {
+        top: 50px;
+        width: 300px;
+        padding: 0;
+    }
+
+    .modal-container{
+        width: calc(100% - 60px); 
+        margin: 0 auto;
+    }
+
+    .modal-ttl{
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    label{
+        font-size: 10px;
+    }
+
+    input{
+        font-size: 12px;
+    }
+
+    select{
+        font-size: 12px;
+    }
+    
+    button{
+        display: block;
+        width: 120px;
+        margin: 0 auto;
+        font: normal normal medium 16px/27px "YuMincho";
+        letter-spacing: 0px;
+        color: #000000;
+        padding: 13px 10px;
+        margin-top: 10px;
+    }
+
+    
+    /*ナビのスタイル*/
+    nav.NavMenu{
+    position: fixed;
+    z-index: 40;
+    top: 0;
+    left: 0;
+    background: #399DE6;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: none;
+    }
+    
+    nav.NavMenu ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    }
+    
+    nav.NavMenu ul li{
+    font-size: 24px;
+    list-style-type: none;
+    width: 100%;
+    padding-bottom: 0px;
+    }
+    
+    nav.NavMenu ul li:last-child{
+    padding-bottom: 0;
+    }
+    
+    nav.NavMenu ul li a{
+    display: block;
+    color: #fff;
+    padding: 15px 0;
+    font-weight: bold;
+    font-size: 18px;
+    }
+    
+    /*ボタンのスタイル*/
+    .Toggle {
+    position: fixed;
+    right:20px;
+    top: 10px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    z-index: 50;
+    display: block;
+    }
+    
+    .Toggle span {
+    display: block;
+    position: absolute;
+    width: 35px;
+    border-bottom: solid 4px #C1C1C1;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    left: 6px;
+    }
+    
+    .Toggle span:nth-child(1) {
+    top: 9px;
+    }
+    
+    .Toggle span:nth-child(2) {
+    top: 20px;
+    }
+    
+    .Toggle span:nth-child(3) {
+    top: 31px;
+    }
+    
+    .Toggle.active span:nth-child(1) {
+    top: 18px;
+    left: 6px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border-bottom: solid 3px #C1C1C1;
+    }
+    .Toggle.active span:nth-child(2),
+    .Toggle.active span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border-bottom: solid 3px #C1C1C1;
+    }
+
+}
+
+footer{
+    background: url(Ex-sozai/bg3.jpg);
+    padding-top: 64px;
+}
+
+footer nav{
+    display: block;
+    writing-mode: vertical-rl;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+
+.footer-list{
+    padding: 0 14px;
+    box-sizing: border-box;
+    font: normal normal medium 18px/32px "YuMincho";
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 13px;
+    color: #000000;    
+    text-decoration: none;
+}
+
+.footer-list a{
+    text-decoration: none;    
+    color: #000000;    
+}
+
+.footer-logo{
+    display: block;
+    width: 145px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.footer-address{
+    text-align: center;
+}
+
+.footer-address-txt{
+    padding-bottom: 23px;
+}
+
+.copyright{
+    background: #000000 0% 0% no-repeat padding-box;
+    text-align: center;
+}
+
+.copyright-txt{
+    font: normal normal medium 12px/24px "YuMincho";
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    color: #FFFFFF;    
+    padding: 23px 0;
+}
+
+@media (max-width: 767px){
+    footer{
+        padding-top: 30px;
+    }    
+
+    footer nav{
+        margin-bottom: 40px;
+    }
+
+    .footer-logo{
+        margin-bottom: 40px;
+    }
+
+}
+
+
+.top-wrapper{
+    height: 3000px;
+}
+
+
+.top-wrapper{
+    font: normal normal 800 34px/42px "YuMincho";
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    background: transparent url('Ex-sozai/onsen-header.jpg') 0% 0% no-repeat padding-box;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    padding-top: 80px;
+    position: relative;
+}
+
+.top-wrapper h1{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+}
+
+.container{
+    max-width: 1180px;
+    margin: 0 auto; 
+}
+
+.breadcrumbs{
+    padding: 36px 0 100px;
+
+}
+
+.breadcrumbs a{
+    text-decoration: none;
+    font: normal normal medium 16px/32px "YuMincho";
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.top-txt{
+    text-align: center;
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom:80px;
+}
+
+.flex-container{
+    display: flex;
+    position: relative;
+}
+
+
+.flex-img{
+    max-width: 525px;
+    z-index: 10;    
+    padding-bottom: 200px;
+}
+
+.flex-img img{
+    width: 100%;
+    height: 300px;
+}
+
+.flex-txt{
+    position: absolute;
+    background: url(Ex-sozai/bg.jpg);
+    top:50px;
+    right: 0;
+    margin: 0 auto;
+    padding:60px 70px 70px 240px;
+}
+
+
+.flex-txt h3{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.txt{
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.memo{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.flex-container-reverse{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    margin-bottom: 75px;
+}
+
+.flex-img{
+    max-width: 525px;
+    z-index: 10;    
+    padding-bottom: 200px;
+}
+
+.flex-img img{
+    width: 100%;
+    height: 300px;
+}
+
+.flex-txt-reverse{
+    position: absolute;
+    background: url(Ex-sozai/bg.jpg);
+    top:50px;
+    left: 0;
+    margin: 0 auto;
+    padding:60px 240px 100px 70px;
+}
+
+
+.flex-txt-reverse h3{
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.txt{
+    font-size: 16px;
+    line-height: 32px;
+    margin-bottom: 50px;
+}
+
+.memo{
+    font-size: 14px;
+    line-height: 21px;
+}
+
+
+@media (min-width:376px) and (max-width:768px){
+    .flex-container{
+        display: block;
+        position: static;
+    }
+    .flex-container-reverse{
+        display: block;
+        position: static;
+    }
+
+    .flex-img{
+        z-index: 0;    
+        padding-bottom: 0;
+        max-width: none;
+    }
+
+    .flex-img img{
+        object-fit: cover;
+    }
+
+    .flex-txt{
+        position: static;
+        padding: 50px 100px;
+    }
+    .flex-txt-reverse{
+        position: static;
+        padding: 50px 100px;
+    }
+    .flex-txt h3{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    .flex-txt-reverse h3{
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+    
+    .txt{
+        font-size: 16px;
+        line-height: 32px;
+        margin-bottom: 20px;
+    }
+
+    .memo{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width:375.9px){
+    .breadcrumbs{
+        padding: 20px;
+    }
+
+    .top-txt{
+        font-size: 12px;
+        margin: 30px 0;
+    }
+
+    .flex-container{
+        display: block;
+        position: static;
+    }
+    .flex-container-reverse{
+        display: block;
+        position: static;
+    }
+
+    .flex-img{
+        z-index: 0;    
+        padding-bottom: 0;
+        max-width: none;
+    }
+
+    .flex-img img{
+        object-fit: cover;
+    }
+
+    .flex-txt{
+        position: static;
+        padding: 20px 30px;
+    }
+    .flex-txt-reverse{
+        position: static;
+        padding: 20px 30px;
+    }
+    .flex-txt h3{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    .flex-txt-reverse h3{
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .txt{
+        font-size: 12px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    .memo{
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+.effect{
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+    padding: 95px 0;
+    margin-bottom: 97px;
+}
+
+.effect-ttl{
+    text-align: center;
+    margin-bottom: 50px;
+    font: normal normal medium 26px/32px "YuMincho";
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000000;    
+}
+
+table{
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.table-item{
+    width: 220px;    
+}
+
+table tr{
+    border-top: 1px solid #E7E7E7;
+    border-bottom: 1px solid #E7E7E7;
+}
+
+table tr td{
+    font-size: 15px;
+    line-height: 22px;
+    padding: 15px 0;
+}
+
+@media (min-width:376px) and (max-width:768px){
+    .effect{
+        padding: 40px 0;
+        margin-bottom: 50px;
+    }
+
+    table{
+        max-width: 700px;
+    }
+
+    .table-item{
+        width: 120px;    
+    }
+}
+
+@media (max-width:375.9px){
+    .effect{
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+
+    .effect-ttl{
+        margin-bottom: 10px;
+    }
+
+    table{
+        max-width: 300px;
+    }
+
+    .table-item{
+        width: 120px;    
+    }
+
+    table tr td{
+        font-size: 12px;
+        line-height: 16px;
+        padding: 10px 0;
+    }
+}

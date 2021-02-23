@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet.css">
+<title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+<meta name="description" content="日本古来の素材と現代的表現を併せ持つ温泉旅館、石井花壇。 伝統的「和」の息づく空間で、至極のひとときをお過ごしください。">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <a href="index.html" class="header-logo">
+                <img src="ex-sozai/top-header-logo.png" alt="">
+            </a>
+            <a href="index.html" class="sub-header-logo">
+                <img src="ex-sozai/sub-header-logo.png" alt="">
+            </a>
+
+            <nav class="pc-navi">
+                <ul>
+                    <li><a href="index room.html" class="navi-list">お部屋</a></li>
+                    <li><a href="index menu.html" class="navi-list">お料理</a></li>
+                    <li><a href="index onsen.html" class="navi-list">温泉</a></li>
+                </ul>
+           </nav>
+
+
+ <div id="open" class="reserve">
+    <img src="ex-sozai/calender.png" alt="">宿泊予約
+</div>
+</div>
+
+<section id="modal" class="hidden">
+<div class="modal-container">
+    <p class="modal-ttl">宿泊予約</p>
+
+    <label>お名前<input type="text" id="name" placeholder="例：やまだたろう"></label>
+    <label>メールアドレス<input type="email" id="email" placeholder="例：Example@example.com">
+        <label>ご希望プラン(空いているプランのみ表示されます)
+            <select name="example" required>
+                <option style="display: none;">プランを選択してください</option>
+        <option value="選択肢1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+        <option value="選択肢2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+        <option value="選択肢3">③絶景貸切露天と個別懐石を満喫できるファミリープラン</option>
+    </select>
+    </label>
+    <label>日時選択</label>
+    <input class="flatpickr" type="text" readonly="readonly" placeholder="日時を選択してください">
+    <button>送信する</button>
+    <div class="close" id="close">
+        <img src="Ex-sozai/close.png" alt=""><br>
+    </div>
+</div>
+</section>
+
+
+<div id="mask" class="hidden"></div> 
+    
+        <nav class="NavMenu">
+            <ul>
+            <li><a href="index room.html">お部屋</a></li>
+            <li><a href="index menu.html">お料理</a></li>
+            <li><a href="index onsen.html">温泉</a></li>
+            </ul>
+        </nav>
+            
+            <!-- メニュー -->
+            <div class="Toggle">
+            <span class="toggle-span"></span>
+            <span></span>
+            <span></span>
+            </div>
+
+    </header>
+
+    <main>
+        <div class="top-wrapper">
+            <div class="first-view src1"></div>
+            <div class="first-view src2"></div>
+            <div class="first-view src3"></div>
+                <p class="line1">頑 張 る 人 の<br>頑 張 ら な い 時 間</p>
+        </div>
+
+        <section class="intro-wrapper">
+            <div class="intro-inner">
+                <div data-aos="fade-up" data-aos-duration="2000">
+                <h2 class="intro_ttl">温 海 温 泉 の<br>美 し さ に 癒 や さ れ て</h2>
+
+                <p>東 北 の 奥 座 敷 で あ る 温 海 温 泉 郷<br>
+                    開 湯 は 約 <span class="number">1300</span>年 前 と さ れ 、 役 小 角 が<br>
+                    発 見 し た と 伝 え ら れ ま す</p>
+
+                <p>石 井 花 壇 は 江 戸 よ り 続 く 由 緒 あ る 旅 館 で<br>
+                    ク ラ シ ッ ク な 作 り の 中 に 大 正 ロ マ ン あ ふ れ る<br>
+                    内 装 を 残 し て お り ま す</p>
+
+                <p>圧 倒 的 癒 や し の 空 間 で<br>
+                    頑 張 る 現 代 人 に<br>
+                    頑 張 ら な い 圧 倒 的 な 非 日 常 を ご 提 供 し ま す</p>
+
+                <p class="sign">石 井 花 壇</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-wrapper">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="about-flex">
+                    <div class="flex_img">
+                        <img src="Ex-sozai/oheya-top.jpg" alt="">
+                    </div>
+                    <div class="flex_txt">
+                        <h2>喧騒から離れた空間<br>心落ち着く至極のひととき</h2>
+                        <p>まるで時が止まったかのような、圧倒的な静寂のなかで、<br>ひたすらにゆったりと…。<br>最高級の「何もしない時間」をお過ごしください。</p>
+                        <div class="link">
+                            <a href="index room.html">お部屋について</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="about-flex-reverse">
+                    <div class="flex_img">
+                        <img src="Ex-sozai/menu-top.jpg" alt="">
+                    </div>
+                    <div class="flex_txt-reverse">
+                        <h2>出迎えるのは<br>極上の温海料理</h2>
+                        <p>最も旬の食材を愉しむ、最高の贅沢を<br>最高級A5ランクの米沢牛と共に頂く。<br>あなたの人生史に残る「極上の感動」を<br>お約束します。</p>
+                        <div class="link">
+                            <a href="index menu.html">料理について</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="about-flex">
+                    <div class="flex_img">
+                        <img src="Ex-sozai/onsen-top.jpg" alt="">
+                    </div>
+                    <div class="flex_txt">
+                        <h2>疲れ切った身体にやすらぎを<br>温海の源泉に癒やされて</h2>
+                        <p>古くは弘法大師の病をも治療したと言われる熱海の泉質。<br>現代人の疲弊しきった身体を修復する最高級の湯治場として<br>ご活用ください。</p>
+                        <div class="link">
+                            <a href="index onsen.html">温泉について</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pran-wrapper">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="container">
+                    <img src="Ex-sozai/logo02.png" alt="" class="pran-logo">
+                    <h2 class="pran_top">おすすめご宿泊プラン</h2>
+        
+                    <div class="pran-flex">
+                        <div class="plan-flex-inner">
+                            <img src="Ex-sozai/recommended01.jpg" alt="" class="recommended">
+                            <p class="pran_ttl">朝食付きプラン、日本近海で取れたのどぐろを朝食として…</p>
+                            <p class="pran_txt">最高級と称されるのどぐろ、正式には「アカムツ」と呼ばれる魚、味は独特の上品な味わいで、焼いても煮ても美味</p>
+                        </div>
+                    
+                    
+                        <div class="plan-flex-inner">
+                            <img src="Ex-sozai/recommended02.jpg" alt="" class="recommended">
+                            <p class="pran_ttl">【期間限定】熱海蟹をたっぷりと愉しむプラン。</p>
+                            <p class="pran_txt">温海で水揚げされた蟹は「温海蟹」として知られ、嗜好品として愛されてきました。この宿泊プランでは存分に</p>
+                        </div>
+                    
+                        <div class="plan-flex-inner">
+                            <img src="Ex-sozai/recommended03.jpg" alt="" class="recommended">
+                            <p class="pran_ttl">【平日限定】贅沢美味懐石プラン。海辺の四季旬彩プラン。</p>
+                            <p class="pran_txt">熱海近海で取れた魚を鮮度そのままに舟盛りにしてご提供。生きた味をお楽しみください。</p>
+                        </div>
+                    </div>
+            </div>
+        </section>
+
+        <section class="news-wrapper">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="container">
+                    <img src="Ex-sozai/logo02.png" alt="" class="news-logo">
+                    <h2 class="news_top">お知らせ</h2>
+
+                    <ul class="tab-group">
+                        <li class="tab is-active">営業情報</li>
+                        <li class="tab">その他</li>
+                    </ul>
+
+                    <!--タブを切り替えて表示するコンテンツ-->
+                    <div class="panel-group">
+                        <div class="panel is-show">
+                            <div class="news-flex">
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news01.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news02.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news02.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news01.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news01.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news02.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年内最後の営業日は27日になります。</p>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+
+                        <div class="panel">
+                            <div class="news-flex">
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news01.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年明最初の営業日は4日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news02.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年明最初の営業日は4日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news02.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年明最初の営業日は4日になります。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="news-inner">
+                                    <div class="news-left">
+                                        <img src="Ex-sozai/news01.jpg" alt="" class="news-img">
+                                    </div>
+                                    <div class="news-right">
+                                    <p class="news-date">2020.12.24</p>
+                                    <p class="news-txt">年明最初の営業日は4日になります。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="access-wrapper">
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="container">
+                    <img src="Ex-sozai/logo02.png" alt="" class="access-logo">
+                    <h2 class="access_top">アクセス</h2>
+
+                    <div class="access-flex">
+                        <img src="Ex-sozai/access.jpg" alt="" class="access-img">
+                        <div class="access-right">
+                            <p class="access-txt1">住所</p>
+                            <p class="access-txt2">〒000-0000</p>
+                            <p class="access-txt2">山形県鶴岡市xxxxxxxxxx</p>
+                            <p class="access-txt1">TEL/FAX</p>
+                            <p class="access-txt2">000-0000-0000/00-0000-0000</p>
+                            <p class="access-txt1">営業時間</p>
+                            <p class="access-txt2">14:00-23:00</p>
+                            <p class="access-txt2">＊4名以上のご予約の場合は、最寄り駅の「鶴岡駅」より送迎が可能ですので、ご連絡ください。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="access-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49867.71955771468!2d139.56354095521453!3d38.632035130626775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f8c6dbd6c03ae15%3A0x10bc5da99bc816ef!2z44CSOTk5LTcyMDUg5bGx5b2i55yM6ba05bKh5biC5rip5rW3!5e0!3m2!1sja!2sjp!4v1612912779813!5m2!1sja!2sjp" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="map"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footer-list"><a href="index room.html">お部屋</a></li>
+                <li class="footer-list"><a href="index menu.html">お料理</a></li>
+                <li class="footer-list"><a href="index onsen.html">温泉</a></li>
+            </ul>
+       </nav>
+
+        <a href="index.html" class="footer-logo">
+            <img src="Ex-sozai/footer-logo.png" alt="">
+        </a>
+
+        <div class="footer-address">
+            <p class="footer-address-txt">〒000-0000山形県鶴岡市xxxxxxxxxxx</p>
+
+            <p class="footer-address-txt">TEL.000-0000-0000FAX.00-0000-0000</p>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-txt">Copyright © 石井花壇 All Rights Reserved.</div>
+        </div>
+
+        
+    </footer>
+
+    <script>
+        flatpickr('.flatpickr');
+        const config = {
+        locale: 'ja',
+        minDate: "today",
+        mode: "range",
+        dateFormat: "Y-m-d"
+        }
+        flatpickr('.flatpickr', config);        
+    </script>
+<script src="script.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
