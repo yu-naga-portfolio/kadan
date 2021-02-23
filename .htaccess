@@ -1,0 +1,7 @@
+DirectoryIndex frontpage.php headpage.shtml index.html
+
+AuthType Basic
+AuthName "141Kadan"
+AuthUserFile "/.htpasswd"
+require valid-user
+
