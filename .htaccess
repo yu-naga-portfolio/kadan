@@ -1,5 +1,0 @@
-AuthType Basic
-AuthName "141Kadan"
-AuthUserFile "/.htpasswd"
-require valid-user
-
