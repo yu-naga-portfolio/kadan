@@ -1,5 +1,0 @@
-AuthUserFile /yu-naga-portfolio/kadan/.htpasswd
-AuthName "141Kadan"
-AuthType Basic
-require valid-user
-
