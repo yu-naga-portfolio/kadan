@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="stylesheet menu.css">
+<title>石井花壇 | 温海温泉旅館【公式サイト】</title>
+<meta name="description" content="お料理 - 石井花壇 | 温海温泉旅館【公式サイト】">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ja.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-flex">
+            <a href="index.html" class="header-logo">
+                <img src="Ex-sozai/sub-header-logo.png" alt="">
+            </a>
+            <!-- <a href="#" class="sub-header-logo">
+                <img src="ex-sozai/sub-header-logo.png" alt="">
+            </a> -->
+
+            <nav class="pc-navi">
+                <ul>
+                    <li><a href="room_index.html" class="navi-list">お部屋</a></li>
+                    <li><a href="menu_index.html" class="navi-list">お料理</a></li>
+                    <li><a href="onsen_index.html" class="navi-list">温泉</a></li>
+                </ul>
+           </nav>
+
+
+        <div id="open" class="reserve">
+            <img src="ex-sozai/calender.png" alt="">宿泊予約
+        </div>
+        </div>
+
+        <section id="modal" class="hidden">
+        <div class="modal-container">
+            <p class="modal-ttl">宿泊予約</p>
+
+            <label>お名前<input type="text" id="name" placeholder="例：やまだたろう"></label>
+            <label>メールアドレス<input type="email" id="email" placeholder="例：Example@example.com">
+                <label>ご希望プラン(空いているプランのみ表示されます)
+                    <select name="example" required>
+                        <option style="display: none;">プランを選択してください</option>
+                <option value="選択肢1">①【期間限定】海辺の四季旬彩、贅沢美味懐石プラン</option>
+                <option value="選択肢2">②平日に優雅に楽しむ、特別宿泊プラン</option>
+                <option value="選択肢3">③絶景貸切露天と個別懐石を満喫できるファミリープラン</option>
+            </select>
+            </label>
+            <label>日時選択</label>
+            <input class="flatpickr" type="text" readonly="readonly" placeholder="日時を選択してください">
+            <button>送信する</button>
+            <div class="close" id="close">
+                <img src="Ex-sozai/close.png" alt=""><br>
+            </div>
+        </div>
+        </section>
+
+
+        <div id="mask" class="hidden"></div> 
+    
+        <nav class="NavMenu">
+            <ul>
+            <li><a href="room_index.html">お部屋</a></li>
+            <li><a href="menu_index.html">お料理</a></li>
+            <li><a href="onsen_index.html">温泉</a></li>
+            </ul>
+        </nav>
+            
+            <!-- メニュー -->
+            <div class="Toggle">
+            <span class="toggle-span"></span>
+            <span></span>
+            <span></span>
+            </div>
+
+    </header>
+
+    <main>
+        <div class="top-wrapper">
+            <h1>お料理</h1>
+        </div>
+
+        
+        <div class="container">
+            <div class="breadcrumbs" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="index.html"><span itemprop="name">トップ</span></a><meta itemprop="position" content="1" /></span>
+                >
+                <span itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a itemprop="item" href="menu_index.html"><span itemprop="name">お料理</span></a><meta itemprop="position" content="2" /></span>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <p class="top-txt">地元熱海の市場で仕入れた食材のみを使った食材をふんだんに使い、<br>大将の技が光る「熱海料理」<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。</p>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="flex-container">
+                    <div class="flex-img">
+                        <img src="Ex-sozai/menu01.jpg" alt="">
+                    </div>
+                    <div class="flex-txt">
+                        <h3>地元食材にこだわった会席料理</h3>
+                        <p class="txt">みずみずしくほのかに甘い野菜、新鮮で味に深みがある魚介類、肉類。<br>旬の素材をそのままに生かす、経験に裏打ちされた確かな技。<br>四季ごと、日ごとに変化する味わいを、どうぞご堪能ください。<br>あなただけの上質な安らぎのひとときを。</p>
+                        <!-- <p class="memo">＊部屋数に限りがございます。<br>＊洗い場はないため、お体を先に大浴場でお流しになって頂く必要があります。</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="flex-container-reverse">
+                    <div class="flex-img">
+                        <img src="Ex-sozai/menu02.jpg" alt="">
+                    </div>
+                    <div class="flex-txt-reverse">
+                        <h3>熱海の漁港で目利きの品を</h3>
+                        <p class="txt">石井花壇でお出しする料理はすべて料理長である大将の目利きで、<br>熱海の魚市場でその日のうちに仕入れたものを使用しております。<br>日本海の宝玉を十分にお楽しみください。</p>
+                        <!-- <p class="memo">＊お庭は複数のお客様と囲む形になります。<br>＊部屋数に限りがあります。<br>＊ご希望の方は「お抹茶/500円」をルームサービスさせていただきます。</p> -->
+                    </div>
+                </div>
+            </div>
+
+            <div data-aos="fade-up" data-aos-duration="2000">
+                <div class="flex-container">
+                    <div class="flex-img">
+                        <img src="Ex-sozai/menu03.jpg" alt="">
+                    </div>
+                    <div class="flex-txt">
+                        <h3>食材が一流、職人も一流</h3>
+                        <p class="txt">石井花壇の料理人は料亭で20年経験を積んだものばかり。　　　　　　<br>その時の最も旬な食材を、最高の調理でお届けします。<br>また、お料理への細かいご要望にもお答えできますので、<br>お気軽にお申し付けください。</p>
+                        <!-- <p class="memo">＊全室お部屋より日本海を望むことができます。</p> -->
+                    </div>
+                </div>
+            </div>
+        
+        
+        
+        </div>
+
+
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li class="footer-list"><a href="room_index.html">お部屋</a></li>
+                <li class="footer-list"><a href="menu_index.html">お料理</a></li>
+                <li class="footer-list"><a href="onsen_index.html">温泉</a></li>
+            </ul>
+       </nav>
+
+        <a href="index.html" class="footer-logo">
+            <img src="Ex-sozai/footer-logo.png" alt="">
+        </a>
+
+        <div class="footer-address">
+            <p class="footer-address-txt">〒000-0000山形県鶴岡市xxxxxxxxxxx</p>
+
+            <p class="footer-address-txt">TEL.000-0000-0000FAX.00-0000-0000</p>
+        </div>
+
+        <div class="copyright">
+            <div class="copyright-txt">Copyright © 石井花壇 All Rights Reserved.</div>
+        </div>
+
+        
+    </footer>
+
+    <script>
+        flatpickr('.flatpickr');
+        const config = {
+        locale: 'ja',
+        minDate: "today",
+        mode: "range",
+        dateFormat: "Y-m-d"
+        }
+        flatpickr('.flatpickr', config);        
+    </script>
+<script src="script room.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
